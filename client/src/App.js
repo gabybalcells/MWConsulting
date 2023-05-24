@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css'
 import { Grid, Box, Typography, Paper } from '@mui/material'
+import mattimage from './assets/mattheadshot.jpg'
 
 function App() {
   return (
@@ -30,22 +31,13 @@ function App() {
             </Grid>    
         </Grid>
       </Box>
-      <Paper className='body'>placeholder</Paper>
-
-    {/* <div className="App">
-      <h1 >
-          Matthew Wagner Consulting
-        </h1>
-        <h3 >
-          Services
-        </h3>
-        <h3 >
-          Industries
-        </h3>
-        <h3 >
-          Insights
-        </h3>    
-    </div> */}
+      <Grid 
+        container
+      >
+        <Grid item>
+          <img alt="Headshot of Matt" src={mattimage}></img>
+        </Grid>
+      </Grid>
     </div>
   )
 
