@@ -1,9 +1,30 @@
-// import logo from './logo.svg';
-import './App.css'
-import { Grid, Box, Typography, Paper } from '@mui/material'
+import React from 'react';
+import './App.css';
+import { Grid, Paper } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Header from './Components/Header'
+
 import mattimage from './assets/mattheadshot.jpg'
+import {useEffect} from 'react'
 
 function App() {
+
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+
+  //   script.src = "https://publisher.impartner.io/Csp/?vendorName=smartsheet-channel-program&partnerId=08da929c-41b7-96f3-c8ea-e90006006105";
+  //   script.async = true;
+
+  //   document.body.appendChild(script);
+
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   }
+  // }, [])
+
+
+
   return (
     <div>
       <Box>
@@ -17,7 +38,8 @@ function App() {
           paddingRight='10px'
           // textAlign='center'
           >
-          <Grid item xs={7.5}> 
+            <Header/>
+          {/* <Grid item xs={7.5}> 
               <Typography className='siteName' variant='h4'>Matt Wagner Consulting</Typography>
             </Grid>
             <Grid item xs={1.5}>
@@ -28,15 +50,16 @@ function App() {
             </Grid>
             <Grid item xs={1.5}>
               <Typography className='pageLink' variant='h6'>Insights</Typography>
-            </Grid>    
+            </Grid>     */}
         </Grid>
       </Box>
       <Grid 
         container
       >
-        <Grid item>
+      {/* <div class='showcase'></div> */}
+        {/* <Grid item>
           <img alt="Headshot of Matt" src={mattimage}></img>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   )
