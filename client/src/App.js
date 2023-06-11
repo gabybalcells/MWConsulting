@@ -7,6 +7,9 @@ import Header from './Components/Header'
 
 import mattimage from './assets/mattheadshot.jpg'
 import {useEffect} from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Services from './Components/Services';
+
 
 function App() {
 
@@ -61,6 +64,11 @@ function App() {
           <img alt="Headshot of Matt" src={mattimage}></img>
         </Grid> */}
       </Grid>
+        <Routes>
+          <Route path='/' element={<Header/>}>
+            <Route path='services' element={<Services/>}/>
+          </Route>
+        </Routes>
     </div>
   )
 

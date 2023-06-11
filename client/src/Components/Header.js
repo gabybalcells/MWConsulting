@@ -9,32 +9,30 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Outlet, Link } from "react-router-dom";
 
 
 export default function Header() {
 
-    const menuOptions = ['Services', 'Industries', 'Insights']
+    // const menuOptions = ['Services', 'Industries', 'Insights']
 
-    const handleClickMenuOption = () => {
+    // const handleClickMenuOption = () => {
 
-    }
+    // }
 
     return (
         <AppBar>
             <Container>
                 <Toolbar>
                     <Typography>Matt Wagner Consulting</Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex' } }}>
-                        {menuOptions.map((option) => (
-                            <Button
-                                key={option}
-                                onClick={handleClickMenuOption}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {option}
-                            </Button>
-                        ))}
-                    </Box>
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to='/services'>Services</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <Outlet />
                 </Toolbar>
             </Container>
         </AppBar>
