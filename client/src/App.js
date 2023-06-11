@@ -9,6 +9,7 @@ import mattimage from './assets/mattheadshot.jpg'
 import {useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from './Components/Services';
+import Industries from './Components/Industries';
 
 
 function App() {
@@ -67,6 +68,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Header/>}>
             <Route path='services' element={<Services/>}/>
+            <Route path='industries' element={<Industries/>}/>
+
           </Route>
         </Routes>
     </div>

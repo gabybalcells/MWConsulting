@@ -30,6 +30,9 @@ export default function Header() {
                             <li>
                                 <Link to='/services'>Services</Link>
                             </li>
+                            <li>
+                                <Link to='/industries'>Industries</Link>
+                            </li>
                         </ul>
                     </nav>
                     <Outlet />
