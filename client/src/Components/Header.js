@@ -25,16 +25,10 @@ export default function Header() {
             <Container>
                 <Toolbar>
                     <Typography>Matt Wagner Consulting</Typography>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to='/services'>Services</Link>
-                            </li>
-                            <li>
-                                <Link to='/industries'>Industries</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <Menu></Menu>
+                        <Link to='/services'>Services</Link>
+                        <Link to='/industries'>Industries</Link>
+                        <Link to='/industries'>Industries</Link>
                     <Outlet />
                 </Toolbar>
             </Container>
