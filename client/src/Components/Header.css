@@ -1,0 +1,10 @@
+.navTab{
+    color: #ffffff;
+    /* display: inline; */
+    cursor: pointer;
+
+}
+
+.navBar{
+    display: flex
+}
