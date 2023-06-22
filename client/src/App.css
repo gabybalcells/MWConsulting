@@ -12,22 +12,22 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   height: 100vh;
-}
-body {
+} */
+/* body {
   min-height: 100vh;
-}
+} */
 
-.App {
+/* .App {
   text-align: left;
   background-color: var(--tan);
   height: 125px;
   width: 100%; 
   overflow-y: hidden;
-}
+} */
 
-.siteName {
+/* .siteName {
   font-family: 'Trebuchet MS', sans-serif  !important;
   font-weight: bolder !important;
 
@@ -41,7 +41,7 @@ body {
 .body {
   height: 100vh;
  
-}
+} */
 
 /* .App-logo {
   height: 40vmin;

@@ -35,12 +35,12 @@ function App() {
       <Box>
         <Grid className="App"
           container
-          spacing={2}
-          justifyContent="center"
-          alignItems="flex-end"
-          paddingBottom='10px'
-          paddingLeft='10px'
-          paddingRight='10px'
+          // spacing={2}
+          // justifyContent="center"
+          // alignItems="flex-end"
+          // paddingBottom='10px'
+          // paddingLeft='10px'
+          // paddingRight='10px'
           // textAlign='center'
           >
             <Header/>

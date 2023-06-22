@@ -6,5 +6,11 @@
 }
 
 .navBar{
-    display: flex
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.header{
+    background-color: var(--tan);
 }
