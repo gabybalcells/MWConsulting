@@ -24,21 +24,21 @@ export default function Header() {
     // }
 
     return (
-        <AppBar className='header'>
-            <Container>
+        <AppBar className='header' style={{backgroundColor: '#DAAD86'}}>
+            <Container  style={{maxWidth:'100%'}}>
                 <Toolbar>
-                    <Grid container spacing={2} >
-                        <Grid item>
-                            <Typography variant='h4'>Matt Wagner Consulting</Typography>
+                    <Grid container spacing={3} >
+                        <Grid item xs={6} style={{aligntItems: 'center', justifyContent: 'center', direction: 'row', display: 'flex'}}>
+                            <Typography variant='h4' align='left'>Matt Wagner Consulting</Typography>
                         </Grid>
-                        <Grid item>
-                            <NavLink spacing={1} to='/offerings'>Offerings</NavLink>
+                        <Grid item xs={2}>
+                            <NavLink spacing={1} to='/offerings'  className='navLink'>Offerings</NavLink>
                         </Grid>
-                        <Grid item>
-                            <NavLink to='/industries'>Industries</NavLink>
+                        <Grid item xs={2}>
+                            <NavLink to='/industries'  className='navLink'>Industries</NavLink>
                         </Grid>
-                        <Grid item>
-                            <NavLink to='/industries'>Industries</NavLink>
+                        <Grid item xs={2}>
+                            <NavLink to='/industries'  className='navLink'>Industries</NavLink>
                         </Grid>
                     </Grid>
                     {/* <Menu></Menu> */}

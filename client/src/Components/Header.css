@@ -1,16 +1,8 @@
-/* .navTab{
-    color: #ffffff;
-    display: inline;
-    cursor: pointer;
-
-}
-
-.navBar{
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-items: center;
     display: flex;
-    align-items: stretch;
-    
-} */
-
-.header{
-    background-color: #DAAD86;
 }
