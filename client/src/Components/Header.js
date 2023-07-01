@@ -28,16 +28,16 @@ export default function Header() {
             <Container  style={{maxWidth:'100%'}}>
                 <Toolbar>
                     <Grid container spacing={3} >
-                        <Grid item xs={6} style={{aligntItems: 'center', justifyContent: 'center', direction: 'row', display: 'flex'}}>
+                        <Grid item xs={6} style={{aligntItems: 'center', justifyContent: 'left', direction: 'row', display: 'flex'}}>
                             <Typography variant='h4' align='left'>Matt Wagner Consulting</Typography>
                         </Grid>
-                        <Grid item xs={2}>
-                            <NavLink spacing={1} to='/offerings'  className='navLink'>Offerings</NavLink>
+                        <Grid item xs={2} className='navItem'>
+                            <NavLink spacing={1} to='/offerings' className='navLink'>Offerings</NavLink>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} className='navItem'>
                             <NavLink to='/industries'  className='navLink'>Industries</NavLink>
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={2} className='navItem'>
                             <NavLink to='/industries'  className='navLink'>Industries</NavLink>
                         </Grid>
                     </Grid>
